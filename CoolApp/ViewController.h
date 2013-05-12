@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *input;
+- (IBAction)handleInput:(id)sender;
+- (IBAction)clearInput:(id)sender;
 
 @end

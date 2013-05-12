@@ -26,4 +26,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)handleInput:(id)sender {
+    NSString* value = [[self input] text];
+    NSLog(@"%@", value);
+}
+
+- (IBAction)clearInput:(id)sender {
+    [[self input] setText: Nil];
+}
 @end

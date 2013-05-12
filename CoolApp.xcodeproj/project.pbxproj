@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		995BC1551740168500A1EF92 /* PandoraBot.m in Sources */ = {isa = PBXBuildFile; fileRef = 995BC1541740168500A1EF92 /* PandoraBot.m */; };
 		99C38FD9173EBB9200496C50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C38FD8173EBB9200496C50 /* UIKit.framework */; };
 		99C38FDB173EBB9200496C50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C38FDA173EBB9200496C50 /* Foundation.framework */; };
 		99C38FDD173EBB9200496C50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C38FDC173EBB9200496C50 /* CoreGraphics.framework */; };
@@ -18,9 +19,12 @@
 		99C38FEF173EBB9200496C50 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C38FEE173EBB9200496C50 /* Default-568h@2x.png */; };
 		99C38FF2173EBB9200496C50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C38FF1173EBB9200496C50 /* ViewController.m */; };
 		99C38FF5173EBB9200496C50 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C38FF3173EBB9200496C50 /* ViewController.xib */; };
+		99C39000173EBBAE00496C50 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C38FFF173EBBAE00496C50 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		995BC1531740168500A1EF92 /* PandoraBot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PandoraBot.h; sourceTree = "<group>"; };
+		995BC1541740168500A1EF92 /* PandoraBot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PandoraBot.m; sourceTree = "<group>"; };
 		99C38FD4173EBB9200496C50 /* CoolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C38FD8173EBB9200496C50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		99C38FDA173EBB9200496C50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +41,7 @@
 		99C38FF0173EBB9200496C50 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		99C38FF1173EBB9200496C50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		99C38FF4173EBB9200496C50 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		99C38FFF173EBBAE00496C50 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C39000173EBBAE00496C50 /* CoreData.framework in Frameworks */,
 				99C38FD9173EBB9200496C50 /* UIKit.framework in Frameworks */,
 				99C38FDB173EBB9200496C50 /* Foundation.framework in Frameworks */,
 				99C38FDD173EBB9200496C50 /* CoreGraphics.framework in Frameworks */,
@@ -53,9 +59,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		995BC1511740162F00A1EF92 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				995BC1531740168500A1EF92 /* PandoraBot.h */,
+				995BC1541740168500A1EF92 /* PandoraBot.m */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
 		99C38FC9173EBB9200496C50 = {
 			isa = PBXGroup;
 			children = (
+				99C38FFF173EBBAE00496C50 /* CoreData.framework */,
 				99C38FDE173EBB9200496C50 /* CoolApp */,
 				99C38FD7173EBB9200496C50 /* Frameworks */,
 				99C38FD5173EBB9200496C50 /* Products */,
@@ -83,6 +99,7 @@
 		99C38FDE173EBB9200496C50 /* CoolApp */ = {
 			isa = PBXGroup;
 			children = (
+				995BC1511740162F00A1EF92 /* Lib */,
 				99C38FE7173EBB9200496C50 /* AppDelegate.h */,
 				99C38FE8173EBB9200496C50 /* AppDelegate.m */,
 				99C38FF0173EBB9200496C50 /* ViewController.h */,
@@ -176,6 +193,7 @@
 				99C38FE5173EBB9200496C50 /* main.m in Sources */,
 				99C38FE9173EBB9200496C50 /* AppDelegate.m in Sources */,
 				99C38FF2173EBB9200496C50 /* ViewController.m in Sources */,
+				995BC1551740168500A1EF92 /* PandoraBot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +309,7 @@
 				99C38FFA173EBB9200496C50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
